@@ -1,0 +1,13 @@
+ID,EMAIL,FIRSTNAME,LASTNAME,COUNTRY,CREATEDON,DELIVERYDATE,ORDERSTATUS,IMAGEURL
+1234A6ADD9191EED96CF82390B75BF68,fnicola@itwagen.com,Francesca,Nicola,Italy,20211015,20211129,D,/salesorders7760/webapp/assets/jpg_logo.JPG
+1234A6ADD9191EED96CF82390B75DF68,rmartin@frwagen.com,Richard,Martin,France,20220720,20221215,M,/salesorders7760/webapp/assets/jpg_logo.JPG
+1234A6ADD9191EED96CF82390B75FF68,pcosta@ptwagen.com,Paulo,Costa,Portugal,20210528,20211030,D,/salesorders7760/webapp/assets/jpg_logo.JPG
+1234A6ADD9191EED96CF82390B761F68,ojames@gbwagen.com,Oliver,James,United Kingdom,20220724,20221105,W,/salesorders7760/webapp/assets/jpg_logo.JPG
+1234A6ADD9191EED96CF82390B763F68,kolsen@dkwagen.com,Karen,Olsen,Denmark,20210109,20211219,D,/salesorders7760/webapp/assets/jpg_logo.JPG
+1234A6ADD9191EED96CF82390B765F68,smeijer@nlwagen.com,Sander,Meijer,Netherlands,20220924,20221215,M,/salesorders7760/webapp/assets/jpg_logo.JPG
+1234A6ADD9191EED96CF82390B767F68,aperez@eswagen.com,Antonio,Pérez,Spain,20220424,20221101,W,/salesorders7760/webapp/assets/jpg_logo.JPG
+1234A6ADD9191EED96CF82390B769F68,nschmid@chwagen.com,Nino,Schmid,Switzerland,20220313,20221218,M,/salesorders7760/webapp/assets/jpg_logo.JPG
+
+
+
+
