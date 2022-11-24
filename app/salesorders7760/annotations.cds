@@ -8,7 +8,7 @@ annotate service.Order with {
 };
 
 annotate service.Item with {
-    ImageUrl @(UI.IsImageURL : true)
+    ImageUrl @(UI.IsImageURL : true) 
 };
 
 //       Cabecera listado    //
@@ -112,20 +112,25 @@ annotate CatalogService.Order with @(
         },
         {
             $Type  : 'UI.ReferenceFacet',
-            //           ID     : 'GeneratedFacet1',
+            //            ID     : 'GeneratedFacet1',
             Label  : 'Item',
             Target : 'ToItems/@UI.LineItem'
         }
     ]
 );
 
+//annotate CatalogService.Item with @(UI.SelectionFields : [
+//    'ID',
+//    'Description',
+//    'Name'
+//]);
 
 // Posición listado
 annotate CatalogService.Item with @(UI.LineItem : [
     {
         $Type : 'UI.DataField',
-        Label : 'Ebelp',
-        Value : Ebelp,
+        Label : 'Imageurl',
+        Value : ImageUrl,
     },
     {
         $Type : 'UI.DataField',
@@ -141,11 +146,6 @@ annotate CatalogService.Item with @(UI.LineItem : [
         $Type : 'UI.DataField',
         Label : 'Releasedate',
         Value : ReleaseDate,
-    },
-    {
-        $Type : 'UI.DataField',
-        Label : 'DiscontinuedDate',
-        Value : DiscontinuedDate,
     },
     {
         $Type : 'UI.DataField',
@@ -174,30 +174,37 @@ annotate CatalogService.Item with @(UI.LineItem : [
     },
     {
         $Type : 'UI.DataField',
+        Label : 'DiscontinuedDate',
+        Value : DiscontinuedDate,
+    },
+    {
+        $Type : 'UI.DataField',
         Label : 'Unitofmeasur',
         Value : Unitofmeasure,
     },
     {
         $Type : 'UI.DataField',
-        Label : 'Imageurl',
-        Value : ImageUrl,
+        Label : 'Ebelp',
+        Value : Ebelp,
     },
 ],
 
 //    UI.SelectionFields : [
-
+//        'ID',
+//        'Name'
 //    ],
 );
-
-//]);
-
-//annotate CatalogService with @(UI.SelectionFields : [Item], );
 
 // Posición Navegación
 annotate CatalogService.Item with @(
     UI.FieldGroup #GeneratedGroup1 : {
         $Type : 'UI.FieldGroupType',
         Data  : [
+            {
+                $Type : 'UI.DataField',
+                Label : 'Imageurl',
+                Value : ImageUrl,
+            },
             {
                 $Type : 'UI.DataField',
                 Label : 'Ebelp',
@@ -218,11 +225,11 @@ annotate CatalogService.Item with @(
                 Label : 'Releasedate',
                 Value : ReleaseDate,
             },
-            {
-                $Type : 'UI.DataField',
-                Label : 'DiscontinuedDate',
-                Value : DiscontinuedDate,
-            },
+            ////           {
+            //               $Type : 'UI.DataField',
+            //                Label : 'DiscontinuedDate',
+            //                Value : DiscontinuedDate,
+            //            },
             {
                 $Type : 'UI.DataField',
                 Label : 'Price',
@@ -253,15 +260,13 @@ annotate CatalogService.Item with @(
                 Label : 'Unitofmeasur',
                 Value : Unitofmeasure,
             },
-            {
-                $Type : 'UI.DataField',
-                Label : 'Imageurl',
-                Value : ImageUrl,
-            },
         ],
     },
 
-    //   UI.SelectionFields             : [
+    //    UI.SelectionFields             : [
+    //        'ID',
+    //        'Quantity',
+    //        'Ebelp'
     //    ],
 
     UI.Facets                      : [{

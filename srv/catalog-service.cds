@@ -1,13 +1,13 @@
-using {com.logali as logali} from '../db/schema';
+using {com.logali.sales_7760 as logali} from '../db/schema';
 
 //service CatalogService {
-//    entity SrvOrders      as projection on logali.Orders;
-//    entity SrvOrdersItems as projection on logali.OrdersItems;
+//    entity SrvOrders      as projection on logali.sales_7760.Orders;
+//    entity SrvOrdersItems as projection on logali.sales_7760.OrdersItems;
 //}
 
 define service CatalogService {
     entity Order as
-        select from logali.sales_7760.Orders {
+        select from logali.Orders {
             ID          @mandatory,
             Email,
             FirstName,
@@ -21,7 +21,7 @@ define service CatalogService {
         };
 
     entity Item  as
-        select from logali.sales_7760.OrdersItems {
+        select from logali.OrdersItems {
             ID,
             Ebelp,
             Name,

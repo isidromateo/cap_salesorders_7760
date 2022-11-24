@@ -21,8 +21,8 @@ context sales_7760 {
             DeliveryDate : Date;
             OrderStatus  : String(1);
             ImageUrl     : String;
-                ToItems      : Composition of many OrdersItems
-                                   on ToItems.ToOrders = $self;
+            ToItems      : Composition of many OrdersItems
+                               on ToItems.ID = ID;
     };
 
     entity OrdersItems : cuid {
@@ -42,9 +42,6 @@ context sales_7760 {
             Unitofmeasure    : String(3);
             ImageUrl         : String;
             ToOrders         : Association to Orders;
-  //                ToOrders         : Composition of many Orders
-  //                                       on ToOrders.ToItems = ID;
-
 
     }
 }
